@@ -1,0 +1,67 @@
+/* Styles pour la classe "degrade" */
+
+.degrade {
+    background-color: #1d5b63b2;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Styles pour les titres h1 */
+h1 {
+    color: #333;
+    font-family: Arial, sans-serif;
+    font-size: 24px;
+}
+
+/* Styles pour les liens */
+a {
+    color: #00ff4c;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Styles pour la classe "contenair" */
+.contenair {
+    background-color: #8f89c473;
+    border: 1px solid #dddddd;
+    border-radius: 5px;
+    padding: 20px;
+    margin: 20px auto;
+    max-width: 400px;
+}
+
+/* Styles pour les labels */
+label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+/*Styles pour les champs de saisie */
+input[type="text"],
+input[type="email"],
+input[type="date"],
+select {
+    width: 90%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    margin-bottom: 10px;
+}
+
+/* Styles pour le bouton de validation */
+input[type="submit"] {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 3px;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    background-color: #0056b3;
+}

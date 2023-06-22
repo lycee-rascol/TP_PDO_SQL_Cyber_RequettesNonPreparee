@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Laser quest Albi </title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- Insertion fichier Css --> 
+    </head>
+    <body>
+        
+        <div class="degrade"> <h1> Laser quest Albi - pour voir les reservations éffectuées   
+        <a href="./recapitulatif.html">Cliquez ici</a>
+       </h1>  </div>
+
+        <div class="degrade"> <h1> Laser quest Albi - s'inscrire  </h1> </div>
+        <br>
+        <br>
+        <div class="contenair">
+            <br>
+            <br>
+       
+
+                <form action="../php/inscription.php" method="post">
+                    <label for="nom">Nom:</label>
+                    <input type="text" id="nom" name="nom" required><br><br>
+
+                    <label for="prenom">Prénom:</label>
+                    <input type="text" id="prenom" name="prenom" required><br><br>
+                    
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required><br><br>
+                    
+                    <label for="date">Jour de Réservation:</label>
+                    <input type="date" id="date" name="date" required><br><br>
+                    
+                    <label for="plage_horaire">Plage Horaire:</label>
+                    <select id="plage_horaire" name="plage_horaire" required>
+                        <option value=9>9h - 10h</option>
+                        <option value=10>10h - 11h</option>
+                        <option value=17>17h - 18h</option>
+                        <option value=18>18h - 19h</option>
+                    </select><br><br>
+                    
+                    <input type="submit" value="Valider">
+                </form>
+
+        </div>
+
+</body>
+</html>
