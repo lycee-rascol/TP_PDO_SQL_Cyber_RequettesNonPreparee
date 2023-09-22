@@ -30,7 +30,7 @@
         $pdo = new PDO( $host, $user, $passwd ) ;
         $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
         echo "connection ok <br>";
-
+z
         //insertion suivre cet ordre : email, date, plage_horaire, nom, prenom
         // requette sql :
         //affichage : Votre réservation a été enregistrée avec succès! 
