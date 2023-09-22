@@ -26,8 +26,11 @@
     try {
 
         // Connexion à la base de données avec PDO + setAttribute
-    
-
+        $host = 'mysql:host=localhost;dbname='.$bdd;
+        $pdo = new PDO( $host, $user, $passwd ) ;
+        $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+        echo "connection ok <br>";
+z
         //insertion suivre cet ordre : email, date, plage_horaire, nom, prenom
         // requette sql :
         //affichage : Votre réservation a été enregistrée avec succès! 
@@ -35,7 +38,7 @@
         
     } catch (PDOException $e) {
         //affichage : Une erreur s'est produite lors de l'enregistrement de votre réservation : 
-
+        die($e->getMessage());
     // Fermeture de la connexion
     }    
     ?>
